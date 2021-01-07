@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.A | Hitler Killer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="perfect">
+        Perfect shot: <div id="perfect">0</div>
+    </div>
+    <div class="miss">
+        Missed shot: <div id="miss">0</div>
+    </div>
+    <button onclick="window.location.reload()">Restart</button>
+    <div class="body" id="body" onmousemove="configGun(event)" onclick="score(event)">
+        <div class="clapLog" id="clapLog"></div>
+
+        <img src="images/gun.png" alt="gun" id="gun" onclick="event.stopPropagation()">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
